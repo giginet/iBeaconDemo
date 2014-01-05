@@ -21,6 +21,10 @@
 		07E26E4E18179F70005CD5A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E26E3018179F70005CD5A4 /* UIKit.framework */; };
 		07E26E5618179F70005CD5A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07E26E5418179F70005CD5A4 /* InfoPlist.strings */; };
 		07E26E5818179F70005CD5A4 /* iBeaconDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E26E5718179F70005CD5A4 /* iBeaconDemoTests.m */; };
+		07E26E631817A173005CD5A4 /* BCConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E26E621817A173005CD5A4 /* BCConfigViewController.m */; };
+		07E26E661817A17F005CD5A4 /* BCTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E26E651817A17F005CD5A4 /* BCTrackViewController.m */; };
+		07E26E681817A3C5005CD5A4 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E26E671817A3C5005CD5A4 /* CoreBluetooth.framework */; };
+		07E26E6A1817A3CB005CD5A4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E26E691817A3CB005CD5A4 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		07E26E5318179F70005CD5A4 /* iBeaconDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBeaconDemoTests-Info.plist"; sourceTree = "<group>"; };
 		07E26E5518179F70005CD5A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07E26E5718179F70005CD5A4 /* iBeaconDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBeaconDemoTests.m; sourceTree = "<group>"; };
+		07E26E611817A173005CD5A4 /* BCConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCConfigViewController.h; sourceTree = "<group>"; };
+		07E26E621817A173005CD5A4 /* BCConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCConfigViewController.m; sourceTree = "<group>"; };
+		07E26E641817A17F005CD5A4 /* BCTrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTrackViewController.h; sourceTree = "<group>"; };
+		07E26E651817A17F005CD5A4 /* BCTrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTrackViewController.m; sourceTree = "<group>"; };
+		07E26E671817A3C5005CD5A4 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		07E26E691817A3CB005CD5A4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E26E6A1817A3CB005CD5A4 /* CoreLocation.framework in Frameworks */,
+				07E26E681817A3C5005CD5A4 /* CoreBluetooth.framework in Frameworks */,
 				07E26E2F18179F70005CD5A4 /* CoreGraphics.framework in Frameworks */,
 				07E26E3118179F70005CD5A4 /* UIKit.framework in Frameworks */,
 				07E26E2D18179F70005CD5A4 /* Foundation.framework in Frameworks */,
@@ -101,6 +113,8 @@
 		07E26E2B18179F70005CD5A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07E26E691817A3CB005CD5A4 /* CoreLocation.framework */,
+				07E26E671817A3C5005CD5A4 /* CoreBluetooth.framework */,
 				07E26E2C18179F70005CD5A4 /* Foundation.framework */,
 				07E26E2E18179F70005CD5A4 /* CoreGraphics.framework */,
 				07E26E3018179F70005CD5A4 /* UIKit.framework */,
@@ -119,6 +133,10 @@
 				07E26E4218179F70005CD5A4 /* BCViewController.m */,
 				07E26E4418179F70005CD5A4 /* Images.xcassets */,
 				07E26E3318179F70005CD5A4 /* Supporting Files */,
+				07E26E611817A173005CD5A4 /* BCConfigViewController.h */,
+				07E26E621817A173005CD5A4 /* BCConfigViewController.m */,
+				07E26E641817A17F005CD5A4 /* BCTrackViewController.h */,
+				07E26E651817A17F005CD5A4 /* BCTrackViewController.m */,
 			);
 			path = iBeaconDemo;
 			sourceTree = "<group>";
@@ -250,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E26E661817A17F005CD5A4 /* BCTrackViewController.m in Sources */,
 				07E26E4318179F70005CD5A4 /* BCViewController.m in Sources */,
+				07E26E631817A173005CD5A4 /* BCConfigViewController.m in Sources */,
 				07E26E3918179F70005CD5A4 /* main.m in Sources */,
 				07E26E3D18179F70005CD5A4 /* BCAppDelegate.m in Sources */,
 			);
@@ -379,6 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kohki Miki (3YM67K3AKM)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBeaconDemo/iBeaconDemo-Prefix.pch";
 				INFOPLIST_FILE = "iBeaconDemo/iBeaconDemo-Info.plist";
@@ -392,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kohki Miki (3YM67K3AKM)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBeaconDemo/iBeaconDemo-Prefix.pch";
 				INFOPLIST_FILE = "iBeaconDemo/iBeaconDemo-Info.plist";
@@ -461,6 +483,7 @@
 				07E26E5D18179F70005CD5A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07E26E5E18179F70005CD5A4 /* Build configuration list for PBXNativeTarget "iBeaconDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +492,7 @@
 				07E26E6018179F70005CD5A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
